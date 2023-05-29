@@ -1,7 +1,7 @@
 @extends('admin.admin_layouts')
 
 @section('admin_content')
-    
+
     @php
     $total_post = DB::table('blogs')->count();
     $total_projects = DB::table('projects')->count();

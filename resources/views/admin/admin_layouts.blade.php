@@ -56,7 +56,7 @@
 
 
             <!-- General Settings -->
-            <li class="nav-item @if ($conName[1] == 'setting' && $conName[2] == 'general') active @endif">
+            {{-- <li class="nav-item @if ($conName[1] == 'setting' && $conName[2] == 'general') active @endif">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSetting"
                     aria-expanded="true" aria-controls="collapseSetting">
                     <i class="fas fa-cog"></i>
@@ -95,12 +95,12 @@
                             href="{{ route('admin.general_setting.cookieconsent') }}">Cookie Consent</a>
                     </div>
                 </div>
-            </li>
+            </li> --}}
 
 
 
             <!-- Page Settings -->
-            <li class="nav-item @if ($conName[1] == 'page') active @endif">
+            {{-- <li class="nav-item @if ($conName[1] == 'page') active @endif">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePageSettings"
                     aria-expanded="true" aria-controls="collapsePageSettings">
                     <i class="fas fa-paste"></i>
@@ -141,21 +141,21 @@
                             href="{{ route('admin.page_other.edit') }}">Other</a>
                     </div>
                 </div>
-            </li>
+            </li> --}}
 
 
 
             <!-- Footer Columns -->
-            <li class="nav-item @if ($conName[1] == 'footer') active @endif">
+            {{-- <li class="nav-item @if ($conName[1] == 'footer') active @endif">
                 <a class="nav-link" href="{{ route('admin.footer.index') }}">
                     <i class="fas fa-fw fa-list-alt"></i>
                     <span>Footer Columns</span>
                 </a>
-            </li>
+            </li> --}}
 
 
             <!-- Blog Section -->
-            <li class="nav-item @if ($conName[1] == 'category' || $conName[1] == 'blog' || $conName[1] == 'comment') active @endif">
+            {{-- <li class="nav-item @if ($conName[1] == 'category' || $conName[1] == 'blog' || $conName[1] == 'comment') active @endif">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBlog"
                     aria-expanded="true" aria-controls="collapseBlog">
                     <i class="fas fa-cubes"></i>
@@ -170,35 +170,35 @@
                         <a class="collapse-item" href="{{ route('admin.comment.pending') }}">Pending Comments</a>
                     </div>
                 </div>
-            </li>
+            </li> --}}
 
 
 
             <!-- Dynamic Pages -->
-            <li class="nav-item @if ($conName[1] == 'dynamic-page') active @endif">
+            {{-- <li class="nav-item @if ($conName[1] == 'dynamic-page') active @endif">
                 <a class="nav-link" href="{{ route('admin.dynamic_page.index') }}">
                     <i class="fas fa-cube"></i>
                     <span>Dynamic Pages</span>
                 </a>
-            </li>
+            </li> --}}
 
 
             <!-- Menu Manage -->
-            <li class="nav-item @if ($conName[1] == 'menu') active @endif">
+            {{-- <li class="nav-item @if ($conName[1] == 'menu') active @endif">
                 <a class="nav-link" href="{{ route('admin.menu.index') }}">
                     <i class="fas fa-bars"></i>
                     <span>Menu Manage</span>
                 </a>
-            </li>
+            </li> --}}
 
 
             <!-- Language -->
-            <li class="nav-item @if ($conName[1] == 'language') active @endif">
+            {{-- <li class="nav-item @if ($conName[1] == 'language') active @endif">
                 <a class="nav-link" href="{{ route('admin.language.index') }}">
                     <i class="fas fa-globe"></i>
                     <span>Language</span>
                 </a>
-            </li>
+            </li> --}}
 
 
 
@@ -233,8 +233,8 @@
                     aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="{{ route('admin.product.index') }}">Product</a>
-                        <a class="collapse-item" href="{{ route('admin.shipping.index') }}">Shipping</a>
-                        <a class="collapse-item" href="{{ route('admin.coupon.index') }}">coupon</a>
+                        {{-- <a class="collapse-item" href="{{ route('admin.shipping.index') }}">Shipping</a>
+                        <a class="collapse-item" href="{{ route('admin.coupon.index') }}">coupon</a> --}}
                     </div>
                 </div>
             </li>
@@ -271,28 +271,28 @@
                         $conName[1] == 'social-media') show @endif"
                     aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{ route('admin.slider.index') }}">Sliders</a>
+                        {{-- <a class="collapse-item" href="{{ route('admin.slider.index') }}">Sliders</a> --}}
                         <a class="collapse-item" href="{{ route('admin.project.index') }}">Projects</a>
                         <a class="collapse-item" href="{{ route('admin.photo.index') }}">Photo Gallery</a>
-                        <a class="collapse-item" href="{{ route('admin.video.index') }}">Video Gallery</a>
-                        <a class="collapse-item" href="{{ route('admin.why_choose.index') }}">Why Choose Us</a>
+                        {{-- <a class="collapse-item" href="{{ route('admin.video.index') }}">Video Gallery</a> --}}
+                        {{-- <a class="collapse-item" href="{{ route('admin.why_choose.index') }}">Why Choose Us</a>
                         <a class="collapse-item" href="{{ route('admin.service.index') }}">Services</a>
-                        <a class="collapse-item" href="{{ route('admin.testimonial.index') }}">Testimonials</a>
-                        <a class="collapse-item" href="{{ route('admin.team_member.index') }}">Team Members</a>
-                        <a class="collapse-item" href="{{ route('admin.faq.index') }}">FAQ</a>
-                        <a class="collapse-item" href="{{ route('admin.social_media.index') }}">Social Media</a>
+                        <a class="collapse-item" href="{{ route('admin.testimonial.index') }}">Testimonials</a> --}}
+                        <a class="collapse-item" href="{{ route('admin.team_member.index') }}">Employees</a>
+                        {{-- <a class="collapse-item" href="{{ route('admin.faq.index') }}">FAQ</a> --}}
+                        {{-- <a class="collapse-item" href="{{ route('admin.social_media.index') }}">Social Media</a> --}}
                     </div>
                 </div>
             </li>
 
 
             <!-- Order -->
-            <li class="nav-item @if ($conName[1] == 'order') active @endif">
+            {{-- <li class="nav-item @if ($conName[1] == 'order') active @endif">
                 <a class="nav-link" href="{{ route('admin.order.index') }}">
                     <i class="fas fa-bookmark"></i>
                     <span>Order</span>
                 </a>
-            </li>
+            </li> --}}
 
             <!-- Customer -->
             <li class="nav-item @if ($conName[1] == 'customer') active @endif">
@@ -304,15 +304,15 @@
 
 
             <!-- Email Template -->
-            <li class="nav-item @if ($conName[1] == 'email-template') active @endif">
+            {{-- <li class="nav-item @if ($conName[1] == 'email-template') active @endif">
                 <a class="nav-link" href="{{ route('admin.email_template.index') }}">
                     <i class="fas fa-envelope"></i>
                     <span>Email Template</span>
                 </a>
-            </li>
+            </li> --}}
 
             <!-- Subscriber -->
-            <li class="nav-item @if ($conName[1] == 'subscriber') active @endif">
+            {{-- <li class="nav-item @if ($conName[1] == 'subscriber') active @endif">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse"
                     data-target="#collapseSubscriber" aria-expanded="true" aria-controls="collapseSubscriber">
                     <i class="fas fa-share-alt-square"></i>
@@ -326,7 +326,7 @@
                             Subscribers</a>
                     </div>
                 </div>
-            </li>
+            </li> --}}
 
 
 
